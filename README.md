@@ -15,7 +15,7 @@
  
 **Nom du projet :** [Nom du projet]  
 **Domaine :** Domaine du projet  
-**Responsable du projet :** Aloukou Ariel  
+**Responsable du projet :** OULAI Michel  
 **Date de début :** [Date]
  
 ### Contexte et problématique
