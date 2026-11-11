@@ -384,7 +384,19 @@ Le développement devra tenir compte des contraintes suivantes :
 - Les données médicales doivent être sauvegardées et protégées.
 - Les procédures de validation et de remise doivent correspondre aux responsabilités réellement appliquées par la clinique.
 
-Les technologies de développement, l’hébergement et le prestataire SMS restent à choisir selon les contraintes du projet et les moyens disponibles.
+## 10.1. Technologies retenues
+
+Le développement s’appuie sur les technologies suivantes.
+
+| Couche | Technologie | Rôle dans le projet |
+|---|---|---|
+| **Frontend – interface** | React 18, Vite 5, React Router 6 | Interface du personnel et portail patient, fidèles aux maquettes validées (BNF06, BNF10). |
+| **Frontend – style** | CSS natif, police Inter | Reprise du design system : couleurs, rayons, bordures et typographie. |
+| **Frontend – données** | Données simulées | Phase actuelle (étape 3) : aucune API réelle. Le branchement au backend est prévu ensuite. |
+| **Backend** | Django (Python) | Logique métier, authentification, rôles et permissions, API utilisée par le frontend (BF46 à BF50). |
+| **Base de données** | PostgreSQL | Stockage des dossiers, demandes, résultats et journaux ; intégrité, sauvegardes et traçabilité (BNF03, BNF08, BNF09). |
+
+L’hébergement et le prestataire SMS restent à choisir selon les contraintes du projet et les moyens disponibles.
 
 ---
 
